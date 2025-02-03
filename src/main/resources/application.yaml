@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:redis
+    username: sa
+    password: ''
+    driverClassName: org.h2.Driver
+  jpa:
+    datasource-platform: org.Hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
